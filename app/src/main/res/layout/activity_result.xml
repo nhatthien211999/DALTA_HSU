@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/resultbg"
+    style="@style/Widget.AppCompat.ActionBar.Solid"
+   >
+    <TextView
+        android:id="@+id/TxtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="@dimen/dp80"
+        android:text="score"
+        />
+    <Button
+        android:id="@+id/BtFinish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dp50"
+        android:text="finish"
+        style="?android:attr/borderlessButtonStyle"/>
+
+
+
+</LinearLayout>

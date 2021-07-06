@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardView"
+        android:layout_width="@dimen/dp300"
+        android:layout_height="@dimen/dp180"
+        android:layout_centerHorizontal="true"
+      >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tre">
+
+            <ImageView
+
+                android:id="@+id/ima_pig"
+                android:layout_width="@dimen/dp280"
+                android:layout_height="@dimen/dp140"
+                android:layout_margin="@dimen/dp25"
+                android:layout_marginTop="@dimen/dp20" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/Txt_Question_Name"
+        android:layout_below="@id/cardView"
+        android:layout_width="@dimen/dp300"
+        android:layout_height="@dimen/dp100"
+        android:background="@drawable/layoutrelate"
+        android:textStyle="bold"
+        android:text="Which country's flag is this?"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/sp25"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_margin="5dp"
+
+        />
+
+   <Button
+       android:id="@+id/Bt_Aws_1"
+       android:layout_width="@dimen/dp300"
+       android:layout_height="wrap_content"
+       android:background="@drawable/custom_buttom"
+       android:layout_below="@+id/Txt_Question_Name"
+       android:layout_marginTop="@dimen/dp30"
+       android:textColor="#FAFAFA"
+       android:layout_centerHorizontal="true"
+       android:onClick="removedFragment"
+
+
+
+       />
+
+    <Button
+        android:id="@+id/Bt_Aws_2"
+        android:layout_width="@dimen/dp300"
+        android:background="@drawable/custom_buttom"
+        android:textColor="#FAFAFA"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Bt_Aws_1"
+        android:onClick="removedFragment"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/Bt_Aws_3"
+        android:textColor="#FAFAFA"
+        android:layout_width="@dimen/dp300"
+        android:background="@drawable/custom_buttom"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Bt_Aws_2"
+        android:layout_gravity="right"
+        android:onClick="removedFragment"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <Button
+        android:id="@+id/Bt_Aws_4"
+        android:textColor="#FAFAFA"
+        android:layout_width="@dimen/dp300"
+        android:background="@drawable/custom_buttom"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Bt_Aws_3"
+        android:onClick="removedFragment"
+        android:layout_centerHorizontal="true"
+
+        />
+
+</RelativeLayout>

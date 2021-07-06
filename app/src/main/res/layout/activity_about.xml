@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/world">
+
+    <TextView
+        android:layout_centerVertical="true"
+        android:id="@+id/TxtAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#FCFBFB"
+        android:textStyle="bold"
+        android:textSize="@dimen/dp30"
+        android:text="The test consists of 15 multiple choice questions, including two types of questions: Choose the names of the countries from the National Flag And select the national flags from the given Nations names. The mission of failure is to answer all 15 questions. Your score will be saved after each play" />
+
+    <Button
+        android:id="@+id/BtBackAbout"
+        android:layout_width="@dimen/dp50"
+        android:layout_height="@dimen/dp30"
+        android:layout_margin="@dimen/dp30"
+        android:background="@drawable/anh"
+        style="?android:attr/borderlessButtonStyle"
+
+
+    />
+
+</RelativeLayout>

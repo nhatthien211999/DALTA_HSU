@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/button_volum"
+            android:layout_width="@dimen/dp50"
+            android:layout_height="@dimen/dp50"
+            android:background="@drawable/playmusic" />
+
+        <VideoView
+            android:id="@+id/videoview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/ProText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp100"
+            android:gravity="center"
+            android:text="Game Flag"
+            android:textColor="#FFFfff"
+            android:textSize="@dimen/dp80"
+            android:textStyle="bold"
+            app:fontFamily="@font/alegreya_black_italic" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/BtPlay"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp50"
+                android:soundEffectsEnabled="true"
+                android:text="play"
+                android:textColor="#ff0000"
+                android:textSize="@dimen/dp30"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <Button
+                android:id="@+id/BtHighScore"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/BtPlay"
+                android:layout_marginTop="6dp"
+                android:text="high score"
+                android:textColor="#ff0000"
+                android:textSize="@dimen/dp30"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <Button
+                android:id="@+id/BtAbout"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/BtHighScore"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp10"
+                android:text="about"
+                android:textColor="#ff0000"
+                android:textSize="@dimen/dp30"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <Button
+                android:id="@+id/BtOut"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:layout_below="@id/BtAbout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp10"
+                android:text="exit"
+                android:textColor="#ff0000"
+                android:textSize="@dimen/dp30"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+
+
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/hello"
+            android:layout_width="@dimen/dp180"
+            android:layout_height="@dimen/dp80"
+            android:layout_below="@id/BtOut"
+            android:background="@drawable/hello"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="@dimen/dp100"/>
+    </FrameLayout>
+
+
+</RelativeLayout>

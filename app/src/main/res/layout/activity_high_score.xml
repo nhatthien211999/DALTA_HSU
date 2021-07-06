@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#03A9F4">
+
+    <Button
+        android:id="@+id/BtScoreEasy"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp50"
+        android:layout_marginTop="@dimen/dp10"
+
+        android:text="easy"
+        android:textColor="#ffff00"
+        android:textSize="@dimen/dp30" />
+
+    <Button
+        android:id="@+id/BtScoreNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="normal"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@id/BtScoreEasy"
+        android:textSize="@dimen/dp30"
+        android:layout_marginTop="@dimen/dp10"
+        style="?android:attr/borderlessButtonStyle"
+        android:textColor="#6600cc"
+        />
+
+    <Button
+        android:id="@+id/BtScoreHard"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_toRightOf="@id/BtScoreNormal"
+        android:text="Hard"
+        android:textColor="#f531c0"
+        android:textSize="@dimen/dp30" />
+    <TextView
+        android:id="@+id/Txt_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mode:"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_below="@id/BtScoreNormal"
+        android:textSize="@dimen/dp50"
+        android:gravity="center"
+        android:textColor="@color/cardview_light_background"
+        android:textAlignment="center"
+        />
+    <Button
+        android:id="@+id/BtBackLevel"
+        android:layout_width="@dimen/dp40"
+        android:layout_height="@dimen/dp40"
+        android:background="@drawable/back"
+        />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_score"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/blackcolor"
+        />
+
+</LinearLayout>

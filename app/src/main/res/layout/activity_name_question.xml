@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/dp100">
+
+    <TextView
+        android:id="@+id/Txt_Question_flag_name"
+        android:layout_width="@dimen/dp300"
+        android:textColor="#ffffff"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="@dimen/dp30"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+    />
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Txt_Question_flag_name"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dp20"
+        >
+
+        <ImageButton
+            android:id="@+id/ImaBt1"
+            android:layout_width="@dimen/dp180"
+            android:layout_height="@dimen/dp120"
+            android:scaleType="fitXY"
+            android:onClick="removedFragment"
+            android:padding="@dimen/dp10"
+            />
+
+        <ImageButton
+            android:id="@+id/ImaBt2"
+            android:layout_width="@dimen/dp180"
+            android:layout_height="@dimen/dp120"
+            android:scaleType="fitXY"
+            android:onClick="removedFragment"
+            android:layout_toRightOf="@id/ImaBt1"
+            android:padding="@dimen/dp10"
+            />
+        <ImageButton
+            android:id="@+id/ImaBt3"
+
+            android:layout_width="@dimen/dp180"
+            android:layout_height="@dimen/dp120"
+            android:scaleType="fitXY"
+            android:layout_below="@id/ImaBt1"
+            android:onClick="removedFragment"
+            android:padding="@dimen/dp10"
+            />
+        <ImageButton
+
+            android:id="@+id/ImaBt4"
+            android:layout_width="@dimen/dp180"
+            android:layout_height="@dimen/dp120"
+            android:scaleType="fitXY"
+            android:layout_toRightOf="@id/ImaBt3"
+            android:padding="@dimen/dp10"
+            android:layout_below="@id/ImaBt2"
+            android:onClick="removedFragment"
+            />
+    </RelativeLayout>
+</RelativeLayout>
